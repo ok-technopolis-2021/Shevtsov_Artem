@@ -4,8 +4,24 @@
         <meta charset="UTF-8">
         <title>Personal Webpage</title>
         <link href="styles.css" rel="stylesheet" type="text/css" />
+        <script>
+            document.addEventListener("DOMContentLoaded", function(event) {
+                document.querySelector("#switch-theme").addEventListener('click', switchTheme);
+            });
+            
+            function switchTheme() {
+                let bodyCardClassList = document.querySelector("body").classList;
+                bodyCardClassList.toggle("_dark-theme");
+                bodyCardClassList.toggle("_light-theme");
+            }
+        </script>
     </head>
     <body>
+        <div class="theme_switch">
+            <button class="theme_switch_button" onclick=switchTheme()>
+                SWITCH
+            </button>
+        </div>
         <div class="card">
             <div class="info_block">
                 <div class="info_block_content">
