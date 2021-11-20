@@ -3,18 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>Personal Webpage</title>
-        <link href="styles.css" rel="stylesheet" type="text/css" />
-        <script>
-            document.addEventListener("DOMContentLoaded", function(event) {
-                document.querySelector("#switch-theme").addEventListener('click', switchTheme);
-            });
-            
-            function switchTheme() {
-                let bodyCardClassList = document.querySelector("body").classList;
-                bodyCardClassList.toggle("_dark-theme");
-                bodyCardClassList.toggle("_light-theme");
-            }
-        </script>
+         <!-- inject:css -->
+        <link rel="stylesheet" href="./style.css">
+        <!-- endinject -->
     </head>
     <body>
         <div class="theme_switch">
@@ -32,17 +23,17 @@
                             Shevtsov Artem
                     </div>
                     <div class="info_block_content_prof">
-                            Mad Scientist
+                            Programmist
                     </div>
                     <div class="info_block_content_socials">
                         <a class="info_block_content_socials_link" href="https://ok.ru/profile/584914008503">
-                            <img class="info_block_content_socials_link_image" src="images/social/ok-logo.jpg" />
+                            <img class="info_block_content_socials_link_image" src="images/ok-logo.jpg" />
                         </a>
                         <a class="info_block_content_socials_link" href="https://github.com/PrimeFall">
-                            <img class="info_block_content_socials_link_image" src="images/social/github-logo.png" />
+                            <img class="info_block_content_socials_link_image" src="images/github-logo.png" />
                         </a>
                         <a class="info_block_content_socials_link" href="https://ok.ru/profile/584914008503">
-                            <img class="info_block_content_socials_link_image" src="images/social/ok-logo.jpg" />
+                            <img class="info_block_content_socials_link_image" src="images/ok-logo.jpg" />
                         </a>
                     </div>
                     <div>
@@ -61,10 +52,14 @@
                         Shevtsov Artem
                     </div>
                     <div class="right_block_content_prof">
-                        Mad Scientist
+                        Programmist
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- inject:js -->
+        <script src="./app.js"></script>
+        <!-- endinject -->
     </body>
 </html>
